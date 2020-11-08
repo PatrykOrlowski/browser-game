@@ -5,7 +5,8 @@ import morgan from 'morgan';
 export const app = express();
 
 import { router }  from './routes/index';
-
+var test = "Pierwsze kroki z EJS";
+res.render("character", {test1:test});
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
